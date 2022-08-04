@@ -1,14 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-  <link rel="stylesheet" href="styles.css">
+<title>My first responsive assignment</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+     margin: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Helvetica;
+    font-size: 169%;
+}
+
+/*section {
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}*/
+
+p {
+    position: relative;
+    clear: right;
+}
+div {
+    position: relative;
+    background: gray;
+    border: 1px solid #000;
+    width: 100%;
+    margin: auto;
+}
+.chicken, .beef, .shusi {
+    float: right;
+    width: 150px;
+    border: 1px solid #000;
+    margin: 0;
+    padding: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+.chicken{
+  background: #D59898;
+}
+.beef{
+    background: #C14543;
+    color:#fff;
+}
+.shusi{
+    background: #E5D198;
+}
+.content {
+        padding: 15px;
+        margin: 0px;
+        overflow: auto;
+    }
+/* Media Query */
+
+@media (min-width: 992px) {
+       .col-lg-4 {
+           float: left;
+           width: 33.33%;
+            padding: 15px;
+       }
+   }
+
+
+   @media (min-width: 768px) and (max-width: 991px) {
+          .col-md-6 {
+              float: left;
+              width: 50%;
+              padding: 15px;
+          }
+      }
+      /*mobile version*/
+      @media (max-width: 767px) {
+    .col-sm-12 {
+      float: left;
+        width: 100%;
+        padding: 15px;
+    }
+   }
+
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<h2>This Heading</h2>
-<p>This is a paragraph.</p>
-
+<h1>Our Menu</h1>
+<section class="col-lg-4 col-md-6 col-sm-12" >
+  <div>
+  <p class="chicken">Chicken</p>
+  <p class="content"> Each section should have a section title region that is always positioned at the top right corner of the
+                section no matter the view (desktop, tablet or mobile). Copy the titles from the mockup illustration
+                (i.e., Chicken, Beef, Sushi) or come up with your own. (Hint: use relative and absolute positioning and
+                offsets as discussed in Lecture 22.)
+              </p>
+  </div>
+</section>
+<section class="col-lg-4 col-md-6 col-sm-12">
+  <div>
+  <p class="beef">Beef</p>
+  <p class="content"> Each section should have a section title region that is always positioned at the top right corner of the
+                section no matter the view (desktop, tablet or mobile). Copy the titles from the mockup illustration
+                (i.e., Chicken, Beef, Sushi) or come up with your own. (Hint: use relative and absolute positioning and
+                offsets as discussed in Lecture 22.)
+              </p>
+  </div>
+</section>
+<section class="col-lg-4 col-md-6 col-sm-12">
+  <div>
+  <p class="shusi">Shusi</p>
+  <p class="content"> Each section should have a section title region that is always positioned at the top right corner of the
+                section no matter the view (desktop, tablet or mobile). Copy the titles from the mockup illustration
+                (i.e., Chicken, Beef, Sushi) or come up with your own. (Hint: use relative and absolute positioning and
+                offsets as discussed in Lecture 22.)
+              </p>
+  </div>
+</section>
 </body>
 </html>
